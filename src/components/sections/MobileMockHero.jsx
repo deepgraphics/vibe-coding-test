@@ -136,7 +136,7 @@ const MobileMockHero = () => {
             variant="outlined"
             fullWidth
             sx={{
-              borderColor: '#EEE5D4',
+              borderColor: '#B5BAC0',
               color: '#B5BAC0',
               fontFamily: '"Inter", sans-serif',
               fontWeight: 400,
@@ -145,7 +145,8 @@ const MobileMockHero = () => {
               borderRadius: '8px',
               textTransform: 'none',
               '&:hover': {
-                borderColor: '#B5BAC0',
+                borderColor: '#85909B',
+                color: '#85909B',
                 backgroundColor: 'transparent',
               },
             }}
