@@ -30,7 +30,7 @@ const MobileMockHero = () => {
         <Typography
           sx={{
             fontSize: '1rem',
-            color: '#94A3B8',
+            color: '#85909B',
             fontWeight: 400,
             mb: 2,
             textAlign: 'left',
@@ -60,18 +60,18 @@ const MobileMockHero = () => {
           sx={{
             fontSize: '1rem',
             lineHeight: 1.6,
-            color: '#64748B',
+            color: '#85909B',
             mb: 1,
             fontFamily: '"Inter", sans-serif',
             fontWeight: 400,
           }}
         >
           Yes, any designer can make your{' '}
-          <Box component="span" sx={{ fontWeight: 600, color: '#1E293B' }}>
+          <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
             website
           </Box>{' '}
           or{' '}
-          <Box component="span" sx={{ fontWeight: 600, color: '#1E293B' }}>
+          <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
             app
           </Box>
         </Typography>
@@ -80,14 +80,14 @@ const MobileMockHero = () => {
           sx={{
             fontSize: '1rem',
             lineHeight: 1.6,
-            color: '#64748B',
+            color: '#85909B',
             mb: 1,
             fontFamily: '"Inter", sans-serif',
             fontWeight: 400,
           }}
         >
           look great, but{' '}
-          <Box component="span" sx={{ fontWeight: 600, color: '#1E293B' }}>
+          <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
             does it do what you need it to?
           </Box>
         </Typography>
@@ -96,7 +96,7 @@ const MobileMockHero = () => {
           sx={{
             fontSize: '1rem',
             lineHeight: 1.6,
-            color: '#64748B',
+            color: '#85909B',
             mb: 5,
             fontFamily: '"Inter", sans-serif',
             fontWeight: 400,
@@ -112,7 +112,7 @@ const MobileMockHero = () => {
             variant="contained"
             fullWidth
             sx={{
-              backgroundColor: '#4FD1C7',
+              backgroundColor: '#1ABC9C',
               color: 'white',
               fontFamily: '"Inter", sans-serif',
               fontWeight: 600,
@@ -123,7 +123,7 @@ const MobileMockHero = () => {
               textTransform: 'none',
               boxShadow: 'none',
               '&:hover': {
-                backgroundColor: '#38B2AC',
+                backgroundColor: '#16A085',
                 boxShadow: 'none',
               },
             }}
@@ -136,8 +136,8 @@ const MobileMockHero = () => {
             variant="outlined"
             fullWidth
             sx={{
-              borderColor: '#E2E8F0',
-              color: '#94A3B8',
+              borderColor: '#EEE5D4',
+              color: '#B5BAC0',
               fontFamily: '"Inter", sans-serif',
               fontWeight: 400,
               fontSize: '1rem',
@@ -145,7 +145,7 @@ const MobileMockHero = () => {
               borderRadius: '8px',
               textTransform: 'none',
               '&:hover': {
-                borderColor: '#CBD5E1',
+                borderColor: '#B5BAC0',
                 backgroundColor: 'transparent',
               },
             }}
@@ -181,7 +181,7 @@ const MobileMockHero = () => {
           bottom: 0,
           left: 0,
           right: 0,
-          backgroundColor: '#1E293B',
+          backgroundColor: '#2C3E50',
           borderTopLeftRadius: '40px',
           borderTopRightRadius: '40px',
           py: 4,
@@ -200,12 +200,12 @@ const MobileMockHero = () => {
           >
             <Typography
               sx={{
-                color: '#94A3B8',
+                color: '#B5BAC0',
                 fontSize: '0.875rem',
                 fontFamily: '"Inter", sans-serif',
                 cursor: 'pointer',
                 '&:hover': {
-                  color: '#CBD5E1',
+                  color: '#FFFFFF',
                 },
               }}
             >
@@ -213,12 +213,12 @@ const MobileMockHero = () => {
             </Typography>
             <Typography
               sx={{
-                color: '#94A3B8',
+                color: '#B5BAC0',
                 fontSize: '0.875rem',
                 fontFamily: '"Inter", sans-serif',
                 cursor: 'pointer',
                 '&:hover': {
-                  color: '#CBD5E1',
+                  color: '#FFFFFF',
                 },
               }}
             >
@@ -229,7 +229,7 @@ const MobileMockHero = () => {
           {/* Copyright */}
           <Typography
             sx={{
-              color: '#64748B',
+              color: '#85909B',
               fontSize: '0.875rem',
               fontFamily: '"Inter", sans-serif',
               textAlign: 'center',

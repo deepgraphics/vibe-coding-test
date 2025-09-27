@@ -18,7 +18,7 @@ const HamburgerIcon = () => (
     sx={{
       width: 24,
       height: 24,
-      backgroundColor: '#4FD1C7',
+      backgroundColor: '#1ABC9C',
       borderRadius: '6px',
       display: 'flex',
       flexDirection: 'column',

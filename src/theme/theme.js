@@ -4,35 +4,35 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  // Modern UX-focused Color Palette (sophisticated, less aggressive)
+  // Exact Figma Color Palette
   palette: {
     primary: {
-      main: '#4FD1C7', // Teal as primary (more professional for UX)
-      light: '#68E1D9',
-      dark: '#38B2AC',
+      main: '#1ABC9C', // Exact teal from Figma
+      light: '#1ABC9C',
+      dark: '#16A085',
       contrastText: '#FFFFFF',
     },
     secondary: {
-      main: '#E63946', // Refined red as accent (less aggressive)
-      light: '#FF6B77',
-      dark: '#D62828',
+      main: '#D62A04', // Exact red from Figma
+      light: '#E74C3C',
+      dark: '#5C1C03', // Dark brown from Figma
       contrastText: '#FFFFFF',
     },
     tertiary: {
-      main: '#1A202C', // Deeper navy for sophistication
-      light: '#2D3748',
-      dark: '#171923',
+      main: '#2C3E50', // Exact dark blue from Figma
+      light: '#2C3E50',
+      dark: '#2C3E50',
     },
     background: {
-      default: '#FDFDFE', // Softer white with subtle warmth
+      default: '#FFFFFF', // Pure white
       paper: '#FFFFFF',
-      secondary: '#F8FAFC', // Ultra-light blue-gray
-      accent: '#F1F5F9', // Subtle gradient backgrounds
+      secondary: '#FFFFFF',
+      accent: '#FFFFFF',
     },
     text: {
-      primary: '#0F172A', // Near-black for maximum readability
-      secondary: '#64748B', // Cooler gray (modern)
-      muted: '#94A3B8', // Very light for subtle elements
+      primary: '#2C3E50', // Dark blue for main text
+      secondary: '#85909B', // Gray from Figma
+      muted: '#B5BAC0', // Light gray from Figma
     },
     neutral: {
       50: '#F8FAFC',
