@@ -18,11 +18,9 @@ const MobileMockHero = () => {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
         backgroundColor: '#FFFFFF',
         pt: 15, // Increased padding to account for larger header
-        pb: 8,
-        position: 'relative',
+        pb: 0, // Remove bottom padding since footer is now in flow
       }}
     >
       <Container maxWidth="sm" sx={{ px: 3 }}>
@@ -183,13 +181,10 @@ const MobileMockHero = () => {
       {/* Footer */}
       <Box
         sx={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
           backgroundColor: '#2C3E50',
           py: 4,
           px: 3,
+          width: '100%',
         }}
       >
         <Container maxWidth="sm">
