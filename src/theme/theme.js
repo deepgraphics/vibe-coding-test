@@ -39,45 +39,72 @@ const theme = createTheme({
     },
   },
 
-  // Typography - Modern, professional hierarchy
+  // Typography - Karantina for headings, Inter for body (matching Figma)
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
+
+    // Headers use Karantina font
     h1: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
       fontSize: '3.5rem',
       fontWeight: 700,
       lineHeight: 1.1,
       letterSpacing: '-0.02em',
     },
     h2: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
       fontSize: '2.5rem',
-      fontWeight: 600,
+      fontWeight: 700,
       lineHeight: 1.2,
       letterSpacing: '-0.01em',
     },
     h3: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
       fontSize: '2rem',
-      fontWeight: 600,
+      fontWeight: 700,
       lineHeight: 1.3,
     },
     h4: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
       fontSize: '1.5rem',
-      fontWeight: 600,
+      fontWeight: 700,
       lineHeight: 1.4,
     },
+    h5: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
+      fontSize: '1.25rem',
+      fontWeight: 700,
+      lineHeight: 1.4,
+    },
+    h6: {
+      fontFamily: '"Karantina", "Inter", sans-serif',
+      fontSize: '1.125rem',
+      fontWeight: 700,
+      lineHeight: 1.4,
+    },
+
+    // Body text uses Inter
     body1: {
+      fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
       fontSize: '1.125rem',
       lineHeight: 1.6,
       color: '#718096',
+      fontWeight: 400,
     },
     body2: {
+      fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
       fontSize: '1rem',
       lineHeight: 1.5,
       color: '#718096',
+      fontWeight: 400,
     },
+
+    // Buttons use Inter
     button: {
+      fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
       fontSize: '1rem',
       fontWeight: 600,
-      textTransform: 'none', // No all caps
+      textTransform: 'none',
       letterSpacing: '0.01em',
     },
   },

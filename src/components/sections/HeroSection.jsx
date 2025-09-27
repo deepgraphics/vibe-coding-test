@@ -12,34 +12,72 @@ import {
   useMediaQuery,
 } from '@mui/material';
 
-// Geometric shapes component for visual interest
-const GeometricShapes = () => (
-  <Box
-    sx={{
-      position: 'absolute',
-      right: { xs: '10%', md: '15%' },
-      top: '20%',
-      opacity: 0.1,
-      transform: 'rotate(15deg)',
-      zIndex: 0,
-    }}
-  >
-    <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 2 }}>
-      {[...Array(9)].map((_, i) => (
-        <Box
-          key={i}
-          sx={{
-            width: { xs: 20, md: 30 },
-            height: { xs: 20, md: 30 },
-            backgroundColor: i % 3 === 0 ? '#E53E3E' : i % 3 === 1 ? '#4FD1C7' : '#2D3748',
-            transform: 'rotate(45deg)',
-            borderRadius: '4px',
-            opacity: Math.random() * 0.5 + 0.3,
-          }}
-        />
-      ))}
+// Diamond shapes using actual SVG from assets
+const DiamondShapes = () => (
+  <>
+    {/* Background scattered diamonds */}
+    <Box
+      sx={{
+        position: 'absolute',
+        left: '5%',
+        top: '15%',
+        opacity: 0.08,
+        transform: 'rotate(15deg)',
+        zIndex: 0,
+      }}
+    >
+      <img
+        src="/src/assets/Shape.svg"
+        alt=""
+        style={{
+          width: '40px',
+          height: 'auto',
+          filter: 'hue-rotate(180deg)',
+        }}
+      />
     </Box>
-  </Box>
+
+    <Box
+      sx={{
+        position: 'absolute',
+        right: '8%',
+        top: '25%',
+        opacity: 0.06,
+        transform: 'rotate(-20deg)',
+        zIndex: 0,
+      }}
+    >
+      <img
+        src="/src/assets/Shape.svg"
+        alt=""
+        style={{
+          width: '60px',
+          height: 'auto',
+        }}
+      />
+    </Box>
+
+    <Box
+      sx={{
+        position: 'absolute',
+        left: '20%',
+        bottom: '20%',
+        opacity: 0.04,
+        transform: 'rotate(45deg)',
+        zIndex: 0,
+      }}
+    >
+      <img
+        src="/src/assets/Shape.svg"
+        alt=""
+        style={{
+          width: '80px',
+          height: 'auto',
+          filter: 'hue-rotate(90deg)',
+        }}
+      />
+    </Box>
+  </>
 );
 
 const HeroSection = () => {
@@ -72,7 +110,7 @@ const HeroSection = () => {
         overflow: 'hidden',
       }}
     >
-      <GeometricShapes />
+      <DiamondShapes />
 
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
         <Grid container spacing={4} alignItems="center">
@@ -199,7 +237,7 @@ const HeroSection = () => {
             </Box>
           </Grid>
 
-          {/* Isometric Illustration Space */}
+          {/* Hero Illustration */}
           <Grid item xs={12} md={4}>
             <Box
               sx={{
@@ -210,37 +248,16 @@ const HeroSection = () => {
                 position: 'relative',
               }}
             >
-              {/* Placeholder for isometric illustration - can be replaced with actual graphic */}
-              <Box
-                sx={{
-                  width: '300px',
-                  height: '300px',
-                  background: 'linear-gradient(135deg, #4FD1C7 0%, #38B2AC 100%)',
-                  borderRadius: '20px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  opacity: 0.8,
-                  transform: 'rotate(-5deg)',
-                  boxShadow: '0 20px 40px rgba(79, 209, 199, 0.2)',
+              <img
+                src="/src/assets/DudeandScreens.png"
+                alt="UX Designer working with multiple devices"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  maxWidth: '400px',
+                  filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.1))',
                 }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: 'white',
-                    textAlign: 'center',
-                    fontWeight: 600,
-                    transform: 'rotate(5deg)',
-                  }}
-                >
-                  Isometric
-                  <br />
-                  Illustration
-                  <br />
-                  Placeholder
-                </Typography>
-              </Box>
+              />
             </Box>
           </Grid>
         </Grid>

@@ -19,44 +19,17 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-// Geometric logo component matching Figma design
+// Serial Effect Logo - Using actual SVG from assets
 const SerialEffectLogo = () => (
-  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-    {/* Geometric diamond/cube shapes */}
-    <Box sx={{ display: 'flex', position: 'relative' }}>
-      <Box
-        sx={{
-          width: 12,
-          height: 12,
-          backgroundColor: '#E53E3E',
-          transform: 'rotate(45deg)',
-          borderRadius: '2px',
-        }}
-      />
-      <Box
-        sx={{
-          width: 12,
-          height: 12,
-          backgroundColor: '#4FD1C7',
-          transform: 'rotate(45deg)',
-          borderRadius: '2px',
-          marginLeft: '-4px',
-          marginTop: '6px',
-        }}
-      />
-    </Box>
-    <Typography
-      variant="h6"
-      component="div"
-      sx={{
-        fontWeight: 600,
-        color: '#2D3748',
-        fontSize: '1.25rem',
-        letterSpacing: '-0.01em',
+  <Box sx={{ display: 'flex', alignItems: 'center' }}>
+    <img
+      src="/src/assets/Logo.svg"
+      alt="Serial Effect"
+      style={{
+        height: '32px',
+        width: 'auto',
       }}
-    >
-      Serial Effect
-    </Typography>
+    />
   </Box>
 );
 
