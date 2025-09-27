@@ -1,12 +1,14 @@
-// Main App component - this is the root of your application
-// It sets up the theme and provides the basic structure
+// Serial Effect Main App Component
+// Assembles all sections into the complete one-page site
 
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, Box } from '@mui/material';
 import theme from './theme/theme';
 import Header from './components/common/Header';
-import Home from './pages/Home';
+import HeroSection from './components/sections/HeroSection';
+import ServicesSection from './components/sections/ServicesSection';
+import AboutSection from './components/sections/AboutSection';
 import './styles/global.css';
 
 function App() {
@@ -15,11 +17,16 @@ function App() {
       {/* CssBaseline provides consistent styling across browsers */}
       <CssBaseline />
 
-      {/* Your app structure */}
-      <Header />
-      <main>
-        <Home />
-      </main>
+      {/* Serial Effect One-Page Site */}
+      <Box sx={{ overflow: 'hidden' }}>
+        <Header />
+        <main>
+          <HeroSection />
+          <ServicesSection />
+          <AboutSection />
+          {/* Contact section coming next */}
+        </main>
+      </Box>
     </ThemeProvider>
   );
 }
