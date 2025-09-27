@@ -237,28 +237,6 @@ const MobileMockHero = () => {
             © 2023 DeepGraphics, LLC. All rights reserved.
           </Typography>
         </Container>
-
-        {/* Footer decoration - small diamond shape */}
-        <Box
-          sx={{
-            position: 'absolute',
-            bottom: 20,
-            right: 20,
-            width: 40,
-            height: 25,
-          }}
-        >
-          <img
-            src="/src/assets/Shape.svg"
-            alt=""
-            style={{
-              width: '100%',
-              height: 'auto',
-              opacity: 0.3,
-              filter: 'brightness(0) saturate(100%) invert(69%) sepia(11%) saturate(934%) hue-rotate(182deg) brightness(87%) contrast(89%)',
-            }}
-          />
-        </Box>
       </Box>
     </Box>
   );
