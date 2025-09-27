@@ -106,7 +106,7 @@ const MobileMockHero = () => {
         </Typography>
 
         {/* CTA Buttons */}
-        <Box sx={{ mb: 6 }}>
+        <Box sx={{ mb: 10 }}>
           {/* Primary CTA */}
           <Button
             variant="contained"
@@ -155,7 +155,12 @@ const MobileMockHero = () => {
           </Button>
         </Box>
 
-        {/* Hero Illustration */}
+        {/* Space for new content sections */}
+        <Box sx={{ mb: 10 }}>
+          {/* Future content will go here */}
+        </Box>
+
+        {/* Hero Illustration - moved down */}
         <Box
           sx={{
             display: 'flex',
