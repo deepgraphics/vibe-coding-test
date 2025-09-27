@@ -32,7 +32,7 @@ const MobileMockHero = () => {
             fontSize: '32px',
             color: '#85909B',
             fontWeight: 300,
-            mb: 2,
+            mb: '16px',
             textAlign: 'left',
             fontFamily: '"Karantina", sans-serif',
           }}
