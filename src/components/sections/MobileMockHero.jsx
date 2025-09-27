@@ -201,12 +201,12 @@ const MobileMockHero = () => {
           >
             <Typography
               sx={{
-                color: '#B5BAC0',
-                fontSize: '0.875rem',
+                color: '#FFFFFF',
+                fontSize: '12px',
                 fontFamily: '"Inter", sans-serif',
                 cursor: 'pointer',
                 '&:hover': {
-                  color: '#FFFFFF',
+                  color: '#1ABC9C',
                 },
               }}
             >
@@ -214,12 +214,12 @@ const MobileMockHero = () => {
             </Typography>
             <Typography
               sx={{
-                color: '#B5BAC0',
-                fontSize: '0.875rem',
+                color: '#FFFFFF',
+                fontSize: '12px',
                 fontFamily: '"Inter", sans-serif',
                 cursor: 'pointer',
                 '&:hover': {
-                  color: '#FFFFFF',
+                  color: '#1ABC9C',
                 },
               }}
             >
@@ -230,8 +230,8 @@ const MobileMockHero = () => {
           {/* Copyright */}
           <Typography
             sx={{
-              color: '#85909B',
-              fontSize: '0.875rem',
+              color: '#FFFFFF',
+              fontSize: '12px',
               fontFamily: '"Inter", sans-serif',
               textAlign: 'center',
             }}
