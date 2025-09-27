@@ -58,8 +58,8 @@ const MobileMockHero = () => {
         {/* Value Proposition */}
         <Typography
           sx={{
-            fontSize: '1rem',
-            lineHeight: 1.6,
+            fontSize: '16px',
+            lineHeight: '24px',
             color: '#85909B',
             mb: 1,
             fontFamily: '"Inter", sans-serif',
@@ -78,8 +78,8 @@ const MobileMockHero = () => {
 
         <Typography
           sx={{
-            fontSize: '1rem',
-            lineHeight: 1.6,
+            fontSize: '16px',
+            lineHeight: '24px',
             color: '#85909B',
             mb: 1,
             fontFamily: '"Inter", sans-serif',
@@ -94,8 +94,8 @@ const MobileMockHero = () => {
 
         <Typography
           sx={{
-            fontSize: '1rem',
-            lineHeight: 1.6,
+            fontSize: '16px',
+            lineHeight: '24px',
             color: '#85909B',
             mb: 5,
             fontFamily: '"Inter", sans-serif',
