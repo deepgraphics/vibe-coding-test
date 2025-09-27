@@ -20,7 +20,9 @@ const MobileMockHero = () => {
       sx={{
         backgroundColor: '#FFFFFF',
         pt: 15, // Increased padding to account for larger header
-        pb: 0, // Remove bottom padding since footer is now in flow
+        minHeight: '100vh',
+        position: 'relative',
+        pb: 0,
       }}
     >
       <Container maxWidth="sm" sx={{ px: 3 }}>
@@ -158,35 +160,49 @@ const MobileMockHero = () => {
           {/* Future content will go here */}
         </Box>
 
-        {/* Hero Illustration - locked to footer */}
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            mb: 0, // No gap between illustration and footer
-          }}
-        >
-          <img
-            src="/src/assets/DudeandScreens.png"
-            alt="UX Designer working with multiple devices"
-            style={{
-              width: '100%',
-              maxWidth: '400px',
-              height: 'auto',
-            }}
-          />
-        </Box>
       </Container>
 
-      {/* Footer */}
+      {/* Illustration + Footer Unit - locked to bottom */}
       <Box
         sx={{
-          backgroundColor: '#2C3E50',
-          py: 4,
-          px: 3,
-          width: '100%',
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
+        {/* Hero Illustration */}
+        <Container maxWidth="sm" sx={{ px: 3 }}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              mb: 0, // No gap between illustration and footer
+            }}
+          >
+            <img
+              src="/src/assets/DudeandScreens.png"
+              alt="UX Designer working with multiple devices"
+              style={{
+                width: '100%',
+                maxWidth: '400px',
+                height: 'auto',
+              }}
+            />
+          </Box>
+        </Container>
+
+        {/* Footer */}
+        <Box
+          sx={{
+            backgroundColor: '#2C3E50',
+            py: 4,
+            px: 3,
+            width: '100%',
+          }}
+        >
         <Container maxWidth="sm">
           {/* Footer Links */}
           <Box
@@ -237,6 +253,7 @@ const MobileMockHero = () => {
             © 2023 DeepGraphics, LLC. All rights reserved.
           </Typography>
         </Container>
+        </Box>
       </Box>
     </Box>
   );
