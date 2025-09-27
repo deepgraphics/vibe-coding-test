@@ -66,7 +66,10 @@ const MobileMockHero = () => {
             fontWeight: 400,
           }}
         >
-          Yes, any designer can make your{' '}
+          <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+            Yes
+          </Box>
+          , any designer can make your{' '}
           <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
             website
           </Box>{' '}
