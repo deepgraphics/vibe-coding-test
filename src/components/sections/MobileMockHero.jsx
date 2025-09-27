@@ -89,7 +89,7 @@ const MobileMockHero = () => {
         >
           look great, but{' '}
           <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-            does it do what you need it to?
+            is it positioned to succeed?
           </Box>
         </Typography>
 
@@ -103,7 +103,11 @@ const MobileMockHero = () => {
             fontWeight: 400,
           }}
         >
-          Not sure?
+          Not sure? Let's{' '}
+          <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+            position
+          </Box>{' '}
+          your experience for success.
         </Typography>
 
         {/* CTA Buttons */}
@@ -216,7 +220,11 @@ const MobileMockHero = () => {
                   fontWeight: 400,
                 }}
               >
-                Transform your vision into a clear roadmap with user research, competitive analysis, and strategic planning.
+                Transform your vision into a clear roadmap. I help you understand your users and{' '}
+                <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+                  position
+                </Box>{' '}
+                your product for maximum impact.
               </Typography>
             </Box>
 
@@ -326,19 +334,19 @@ const MobileMockHero = () => {
               textAlign: 'center',
             }}
           >
-            After years building Deep Graphics as a visual design agency, I realized the future lies at the intersection of{' '}
+            After years building Deep Graphics as a visual design agency, I discovered that successful experiences aren't just about great design—they're about strategic{' '}
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              UX expertise
+              positioning
             </Box>
-            ,{' '}
+            . Drawing from psychology principles like the serial{' '}
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              development understanding
-            </Box>
-            , and{' '}
+              position
+            </Box>{' '}
+            effect, I help businesses{' '}
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              AI-powered workflows
-            </Box>
-            .
+              position
+            </Box>{' '}
+            their experiences where users remember them most.
           </Typography>
 
           <Typography
@@ -351,7 +359,14 @@ const MobileMockHero = () => {
               textAlign: 'center',
             }}
           >
-            Serial Effect helps businesses navigate the rapidly changing landscape of user experience design with strategic thinking and modern processes.
+            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+              Serial Effect
+            </Box>{' '}
+            helps businesses navigate the rapidly changing landscape of user experience design—because the right{' '}
+            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+              position
+            </Box>{' '}
+            makes all the difference.
           </Typography>
         </Box>
 
