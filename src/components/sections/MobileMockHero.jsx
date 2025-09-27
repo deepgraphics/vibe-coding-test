@@ -183,8 +183,6 @@ const MobileMockHero = () => {
           left: 0,
           right: 0,
           backgroundColor: '#2C3E50',
-          borderTopLeftRadius: '40px',
-          borderTopRightRadius: '40px',
           py: 4,
           px: 3,
         }}
