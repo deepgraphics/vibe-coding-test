@@ -31,10 +31,10 @@ const MobileMockHero = () => {
           sx={{
             fontSize: '32px',
             color: '#85909B',
-            fontWeight: 400,
+            fontWeight: 300,
             mb: 2,
             textAlign: 'left',
-            fontFamily: '"Inter", sans-serif',
+            fontFamily: '"Karantina", sans-serif',
           }}
         >
           Expertly Architected & Designed
