@@ -158,9 +158,203 @@ const MobileMockHero = () => {
           </Button>
         </Box>
 
-        {/* Space for new content sections */}
-        <Box sx={{ mb: 10 }}>
-          {/* Future content will go here */}
+        {/* Services Section */}
+        <Box sx={{ mb: '64px' }}>
+          {/* Section Header */}
+          <Typography
+            sx={{
+              fontSize: '32px',
+              fontWeight: 300,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#85909B',
+              mb: '16px',
+              textAlign: 'center',
+            }}
+          >
+            How I Help
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '48px',
+              fontWeight: 400,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#2C3E50',
+              mb: '32px',
+              textAlign: 'center',
+              lineHeight: 1.1,
+            }}
+          >
+            STRATEGIC DESIGN SOLUTIONS
+          </Typography>
+
+          {/* Services Cards */}
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '24px', mb: '32px' }}>
+            {/* Product Strategy */}
+            <Box sx={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #EEE5D4',
+              borderRadius: '16px',
+              p: '24px',
+              boxShadow: '0 2px 8px rgba(44, 62, 80, 0.04)',
+            }}>
+              <Typography
+                sx={{
+                  fontSize: '24px',
+                  fontWeight: 400,
+                  fontFamily: '"Karantina", sans-serif',
+                  color: '#2C3E50',
+                  mb: '8px',
+                }}
+              >
+                Product Strategy
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#85909B',
+                  fontFamily: '"Inter", sans-serif',
+                  fontWeight: 400,
+                }}
+              >
+                Transform your vision into a clear roadmap with user research, competitive analysis, and strategic planning.
+              </Typography>
+            </Box>
+
+            {/* UX/UI Design */}
+            <Box sx={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #EEE5D4',
+              borderRadius: '16px',
+              p: '24px',
+              boxShadow: '0 2px 8px rgba(44, 62, 80, 0.04)',
+            }}>
+              <Typography
+                sx={{
+                  fontSize: '24px',
+                  fontWeight: 400,
+                  fontFamily: '"Karantina", sans-serif',
+                  color: '#2C3E50',
+                  mb: '8px',
+                }}
+              >
+                UX/UI Design
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#85909B',
+                  fontFamily: '"Inter", sans-serif',
+                  fontWeight: 400,
+                }}
+              >
+                Create experiences users love with wireframes, prototypes, and pixel-perfect interfaces that drive results.
+              </Typography>
+            </Box>
+
+            {/* Design Ops */}
+            <Box sx={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #EEE5D4',
+              borderRadius: '16px',
+              p: '24px',
+              boxShadow: '0 2px 8px rgba(44, 62, 80, 0.04)',
+            }}>
+              <Typography
+                sx={{
+                  fontSize: '24px',
+                  fontWeight: 400,
+                  fontFamily: '"Karantina", sans-serif',
+                  color: '#2C3E50',
+                  mb: '8px',
+                }}
+              >
+                Design Ops
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#85909B',
+                  fontFamily: '"Inter", sans-serif',
+                  fontWeight: 400,
+                }}
+              >
+                Scale your design impact with AI-powered workflows, design systems, and modern team processes.
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+
+        {/* About Section */}
+        <Box sx={{ mb: '64px' }}>
+          <Typography
+            sx={{
+              fontSize: '32px',
+              fontWeight: 300,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#85909B',
+              mb: '16px',
+              textAlign: 'center',
+            }}
+          >
+            About Serial Effect
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '48px',
+              fontWeight: 400,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#2C3E50',
+              mb: '32px',
+              textAlign: 'center',
+              lineHeight: 1.1,
+            }}
+          >
+            BRIDGING DESIGN & DEVELOPMENT
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '16px',
+              lineHeight: '24px',
+              color: '#85909B',
+              fontFamily: '"Inter", sans-serif',
+              fontWeight: 400,
+              mb: '16px',
+              textAlign: 'center',
+            }}
+          >
+            After years building Deep Graphics as a visual design agency, I realized the future lies at the intersection of{' '}
+            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+              UX expertise
+            </Box>
+            ,{' '}
+            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+              development understanding
+            </Box>
+            , and{' '}
+            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+              AI-powered workflows
+            </Box>
+            .
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '16px',
+              lineHeight: '24px',
+              color: '#85909B',
+              fontFamily: '"Inter", sans-serif',
+              fontWeight: 400,
+              textAlign: 'center',
+            }}
+          >
+            Serial Effect helps businesses navigate the rapidly changing landscape of user experience design with strategic thinking and modern processes.
+          </Typography>
         </Box>
 
       </Container>
