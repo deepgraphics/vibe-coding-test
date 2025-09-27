@@ -16,20 +16,20 @@ import {
 const HamburgerIcon = () => (
   <Box
     sx={{
-      width: 24,
-      height: 24,
+      width: 42,
+      height: 42,
       backgroundColor: '#1ABC9C',
-      borderRadius: '6px',
+      borderRadius: '10px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      gap: '3px',
+      gap: '4px',
     }}
   >
-    <Box sx={{ width: '14px', height: '2px', backgroundColor: 'white', borderRadius: '1px' }} />
-    <Box sx={{ width: '14px', height: '2px', backgroundColor: 'white', borderRadius: '1px' }} />
-    <Box sx={{ width: '14px', height: '2px', backgroundColor: 'white', borderRadius: '1px' }} />
+    <Box sx={{ width: '24px', height: '3px', backgroundColor: 'white', borderRadius: '2px' }} />
+    <Box sx={{ width: '24px', height: '3px', backgroundColor: 'white', borderRadius: '2px' }} />
+    <Box sx={{ width: '24px', height: '3px', backgroundColor: 'white', borderRadius: '2px' }} />
   </Box>
 );
 
@@ -100,7 +100,7 @@ const MobileMockHeader = () => {
               src="/src/assets/Logo.svg"
               alt="Serial Effect"
               style={{
-                height: '28px',
+                height: '64px',
                 width: 'auto',
               }}
             />
