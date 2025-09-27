@@ -147,13 +147,13 @@ const theme = createTheme({
           transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
             transform: 'translateY(-2px)',
-            boxShadow: '0 8px 25px rgba(79, 209, 199, 0.25)',
+            boxShadow: '0 8px 25px rgba(26, 188, 156, 0.25)',
           },
         },
         contained: {
-          background: 'linear-gradient(135deg, #4FD1C7 0%, #38B2AC 100%)',
+          backgroundColor: '#1ABC9C',
           '&:hover': {
-            background: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+            backgroundColor: '#16A085',
           },
         },
         outlined: {
