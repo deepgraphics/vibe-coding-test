@@ -160,12 +160,12 @@ const MobileMockHero = () => {
           {/* Future content will go here */}
         </Box>
 
-        {/* Hero Illustration - moved down */}
+        {/* Hero Illustration - locked to footer */}
         <Box
           sx={{
             display: 'flex',
             justifyContent: 'center',
-            mb: 8,
+            mb: 0, // No gap between illustration and footer
           }}
         >
           <img
