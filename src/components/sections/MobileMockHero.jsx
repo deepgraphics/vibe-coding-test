@@ -115,7 +115,7 @@ const MobileMockHero = () => {
               backgroundColor: '#1ABC9C',
               color: 'white',
               fontFamily: '"Inter", sans-serif',
-              fontWeight: 600,
+              fontWeight: 700,
               fontSize: '16px',
               py: 2,
               mb: 2,
