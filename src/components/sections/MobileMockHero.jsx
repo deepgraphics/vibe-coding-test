@@ -103,11 +103,11 @@ const MobileMockHero = () => {
             fontWeight: 400,
           }}
         >
-          Not sure? Let's{' '}
+          Let's{' '}
           <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-            position
+            bridge the gap
           </Box>{' '}
-          your experience for success.
+          between great design and strategic success.
         </Typography>
 
         {/* CTA Buttons */}
@@ -187,7 +187,7 @@ const MobileMockHero = () => {
               lineHeight: 1.1,
             }}
           >
-            STRATEGIC DESIGN SOLUTIONS
+            AI-ERA UX SOLUTIONS
           </Typography>
 
           {/* Services Cards */}
@@ -209,7 +209,7 @@ const MobileMockHero = () => {
                   mb: '8px',
                 }}
               >
-                Product Strategy
+                AI-Informed Strategy
               </Typography>
               <Typography
                 sx={{
@@ -220,11 +220,11 @@ const MobileMockHero = () => {
                   fontWeight: 400,
                 }}
               >
-                Transform your vision into a clear roadmap. I help you understand your users and{' '}
+                Navigate the{' '}
                 <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-                  position
+                  AI tools landscape
                 </Box>{' '}
-                your product for maximum impact.
+                and integrate smart workflows that enhance rather than replace human creativity.
               </Typography>
             </Box>
 
@@ -245,7 +245,7 @@ const MobileMockHero = () => {
                   mb: '8px',
                 }}
               >
-                UX/UI Design
+                Human-Centered Design
               </Typography>
               <Typography
                 sx={{
@@ -256,7 +256,11 @@ const MobileMockHero = () => {
                   fontWeight: 400,
                 }}
               >
-                Create experiences users love with wireframes, prototypes, and pixel-perfect interfaces that drive results.
+                Solve real user problems with{' '}
+                <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+                  AI-enhanced workflows
+                </Box>{' '}
+                that accelerate design while maintaining strategic thinking and user empathy.
               </Typography>
             </Box>
 
@@ -277,7 +281,7 @@ const MobileMockHero = () => {
                   mb: '8px',
                 }}
               >
-                Design Ops
+                Future-Ready Systems
               </Typography>
               <Typography
                 sx={{
@@ -288,7 +292,11 @@ const MobileMockHero = () => {
                   fontWeight: 400,
                 }}
               >
-                Scale your design impact with AI-powered workflows, design systems, and modern team processes.
+                Build{' '}
+                <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
+                  scalable design systems
+                </Box>{' '}
+                that adapt to rapid AI tool evolution while maintaining consistency and team efficiency.
               </Typography>
             </Box>
           </Box>
@@ -320,7 +328,7 @@ const MobileMockHero = () => {
               lineHeight: 1.1,
             }}
           >
-            BRIDGING DESIGN & DEVELOPMENT
+            NAVIGATING THE AI-UX EVOLUTION
           </Typography>
 
           <Typography
@@ -334,19 +342,11 @@ const MobileMockHero = () => {
               textAlign: 'center',
             }}
           >
-            After years building Deep Graphics as a visual design agency, I discovered that successful experiences aren't just about great design—they're about strategic{' '}
+            After years building Deep Graphics as a visual design agency, I discovered that 2025 brings a unique challenge—{' '}
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              positioning
+              AI tools are everywhere
             </Box>
-            . Drawing from psychology principles like the serial{' '}
-            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              position
-            </Box>{' '}
-            effect, I help businesses{' '}
-            <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              position
-            </Box>{' '}
-            their experiences where users remember them most.
+            , but most teams struggle to integrate them meaningfully. Drawing from psychology principles like the serial position effect, I help teams remember what matters most: solving real user problems.
           </Typography>
 
           <Typography
@@ -362,11 +362,11 @@ const MobileMockHero = () => {
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
               Serial Effect
             </Box>{' '}
-            helps businesses navigate the rapidly changing landscape of user experience design—because the right{' '}
+            bridges the gap between AI hype and practical implementation—helping teams use AI tools to enhance creativity while maintaining{' '}
             <Box component="span" sx={{ fontWeight: 600, color: '#2C3E50' }}>
-              position
-            </Box>{' '}
-            makes all the difference.
+              human-centered design
+            </Box>
+            .
           </Typography>
         </Box>
 
