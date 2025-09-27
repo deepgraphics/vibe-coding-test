@@ -20,7 +20,7 @@ const MobileMockHero = () => {
       sx={{
         minHeight: '100vh',
         backgroundColor: '#FFFFFF',
-        pt: 10, // Account for fixed header
+        pt: 15, // Increased padding to account for larger header
         pb: 8,
         position: 'relative',
       }}
@@ -29,7 +29,7 @@ const MobileMockHero = () => {
         {/* Tagline */}
         <Typography
           sx={{
-            fontSize: '1rem',
+            fontSize: '32px',
             color: '#85909B',
             fontWeight: 400,
             mb: 2,
@@ -43,7 +43,7 @@ const MobileMockHero = () => {
         {/* Main Headline - Karantina Font */}
         <Typography
           sx={{
-            fontSize: '2.75rem',
+            fontSize: '64px',
             fontWeight: 400,
             lineHeight: 1.1,
             color: '#2C3E50',
