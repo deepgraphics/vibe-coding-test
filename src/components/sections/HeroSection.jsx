@@ -106,7 +106,7 @@ const HeroSection = () => {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        background: 'linear-gradient(135deg, #FFFFFF 0%, #F7FAFC 100%)',
+        background: 'linear-gradient(135deg, #FDFDFE 0%, #F8FAFC 50%, #F1F5F9 100%)',
         overflow: 'hidden',
       }}
     >
@@ -116,57 +116,73 @@ const HeroSection = () => {
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={8}>
             <Box sx={{ maxWidth: { xs: '100%', md: '600px' } }}>
-              {/* Tagline */}
-              <Typography
-                variant="body1"
+              {/* Modern tagline with pill design */}
+              <Box
                 sx={{
-                  color: '#E53E3E',
-                  fontWeight: 600,
-                  fontSize: '1.125rem',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  mb: 2,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  px: 3,
+                  py: 1,
+                  borderRadius: '50px',
+                  background: 'linear-gradient(135deg, rgba(79, 209, 199, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%)',
+                  border: '1px solid rgba(79, 209, 199, 0.2)',
+                  mb: 3,
                 }}
               >
-                Expertly Architected & Designed
-              </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: '#4FD1C7',
+                    fontWeight: 600,
+                    fontSize: '0.875rem',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  Expertly Architected & Designed
+                </Typography>
+              </Box>
 
-              {/* Main Headline */}
+              {/* Modern headline with better hierarchy */}
               <Typography
                 variant="h1"
                 sx={{
                   fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
                   fontWeight: 700,
                   lineHeight: 1.1,
-                  color: '#2D3748',
-                  mb: 3,
+                  background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  mb: 4,
                   letterSpacing: '-0.02em',
                 }}
               >
                 USER EXPERIENCES
               </Typography>
 
-              {/* Value Proposition */}
+              {/* Modern value proposition with better contrast */}
               <Typography
                 variant="body1"
                 sx={{
                   fontSize: { xs: '1.125rem', md: '1.25rem' },
                   lineHeight: 1.6,
-                  color: '#718096',
-                  mb: 4,
+                  color: '#64748B',
+                  mb: 3,
                   maxWidth: '540px',
+                  fontWeight: 400,
                 }}
               >
                 Yes, any designer can make your{' '}
-                <Box component="span" sx={{ fontWeight: 600, color: '#2D3748' }}>
+                <Box component="span" sx={{ fontWeight: 600, color: '#0F172A' }}>
                   website
                 </Box>{' '}
                 or{' '}
-                <Box component="span" sx={{ fontWeight: 600, color: '#2D3748' }}>
+                <Box component="span" sx={{ fontWeight: 600, color: '#0F172A' }}>
                   app
                 </Box>{' '}
                 look great, but{' '}
-                <Box component="span" sx={{ fontWeight: 600, color: '#E53E3E' }}>
+                <Box component="span" sx={{ fontWeight: 700, color: '#4FD1C7' }}>
                   does it do what you need it to?
                 </Box>
               </Typography>
@@ -176,36 +192,37 @@ const HeroSection = () => {
                 sx={{
                   fontSize: '1rem',
                   lineHeight: 1.5,
-                  color: '#718096',
-                  mb: 5,
+                  color: '#94A3B8',
+                  mb: 6,
                   maxWidth: '480px',
+                  fontStyle: 'italic',
                 }}
               >
                 Not sure? Let's find out together.
               </Typography>
 
-              {/* CTA Buttons */}
-              <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 2 }}>
+              {/* Modern CTA buttons with better hierarchy */}
+              <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 3 }}>
                 <Button
                   variant="contained"
                   size="large"
                   onClick={scrollToContact}
                   sx={{
-                    background: 'linear-gradient(135deg, #E53E3E 0%, #FF6B6B 100%)',
+                    background: 'linear-gradient(135deg, #4FD1C7 0%, #38B2AC 100%)',
                     color: 'white',
                     fontWeight: 600,
                     fontSize: '1.125rem',
-                    py: { xs: 1.5, md: 2 },
-                    px: { xs: 3, md: 4 },
-                    borderRadius: '8px',
+                    py: { xs: 2, md: 2.5 },
+                    px: { xs: 4, md: 5 },
+                    borderRadius: '12px',
                     textTransform: 'none',
-                    boxShadow: '0 4px 20px rgba(229, 62, 62, 0.3)',
+                    boxShadow: '0 4px 20px rgba(79, 209, 199, 0.3)',
                     '&:hover': {
-                      background: 'linear-gradient(135deg, #C53030 0%, #E53E3E 100%)',
-                      boxShadow: '0 6px 25px rgba(229, 62, 62, 0.4)',
-                      transform: 'translateY(-2px)',
+                      background: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+                      boxShadow: '0 8px 30px rgba(79, 209, 199, 0.4)',
+                      transform: 'translateY(-3px)',
                     },
-                    transition: 'all 0.3s ease',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   }}
                 >
                   GET A FREE UX AUDIT
@@ -217,17 +234,20 @@ const HeroSection = () => {
                   onClick={scrollToServices}
                   sx={{
                     borderColor: '#E2E8F0',
-                    color: '#2D3748',
+                    color: '#0F172A',
                     fontWeight: 600,
                     fontSize: '1rem',
-                    py: { xs: 1.5, md: 2 },
-                    px: { xs: 3, md: 4 },
-                    borderRadius: '8px',
+                    py: { xs: 2, md: 2.5 },
+                    px: { xs: 4, md: 5 },
+                    borderRadius: '12px',
+                    borderWidth: '2px',
                     textTransform: 'none',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                     '&:hover': {
-                      borderColor: '#E53E3E',
-                      color: '#E53E3E',
-                      backgroundColor: 'transparent',
+                      borderColor: '#4FD1C7',
+                      color: '#4FD1C7',
+                      backgroundColor: 'rgba(79, 209, 199, 0.04)',
+                      transform: 'translateY(-2px)',
                     },
                   }}
                 >

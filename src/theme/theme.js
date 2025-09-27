@@ -4,38 +4,54 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  // Serial Effect Color Palette (from Figma)
+  // Modern UX-focused Color Palette (sophisticated, less aggressive)
   palette: {
     primary: {
-      main: '#E53E3E', // Vibrant red/coral from design
-      light: '#FF6B6B',
-      dark: '#C53030',
-      contrastText: '#FFFFFF',
-    },
-    secondary: {
-      main: '#4FD1C7', // Teal/mint accent
-      light: '#81E6E0',
+      main: '#4FD1C7', // Teal as primary (more professional for UX)
+      light: '#68E1D9',
       dark: '#38B2AC',
       contrastText: '#FFFFFF',
     },
+    secondary: {
+      main: '#E63946', // Refined red as accent (less aggressive)
+      light: '#FF6B77',
+      dark: '#D62828',
+      contrastText: '#FFFFFF',
+    },
     tertiary: {
-      main: '#2D3748', // Dark navy for text/contrast
-      light: '#4A5568',
-      dark: '#1A202C',
+      main: '#1A202C', // Deeper navy for sophistication
+      light: '#2D3748',
+      dark: '#171923',
     },
     background: {
-      default: '#FFFFFF', // Clean white background
+      default: '#FDFDFE', // Softer white with subtle warmth
       paper: '#FFFFFF',
-      secondary: '#F7FAFC', // Light gray for sections
+      secondary: '#F8FAFC', // Ultra-light blue-gray
+      accent: '#F1F5F9', // Subtle gradient backgrounds
     },
     text: {
-      primary: '#2D3748', // Dark navy for main text
-      secondary: '#718096', // Medium gray for secondary text
+      primary: '#0F172A', // Near-black for maximum readability
+      secondary: '#64748B', // Cooler gray (modern)
+      muted: '#94A3B8', // Very light for subtle elements
     },
     neutral: {
-      beige: '#F7F3F0', // Neutral beige from design
-      lightGray: '#E2E8F0',
-      mediumGray: '#A0AEC0',
+      50: '#F8FAFC',
+      100: '#F1F5F9',
+      200: '#E2E8F0',
+      300: '#CBD5E1',
+      400: '#94A3B8',
+      500: '#64748B',
+      600: '#475569',
+      700: '#334155',
+      800: '#1E293B',
+      900: '#0F172A',
+    },
+    // Modern gradient palette
+    gradients: {
+      primary: 'linear-gradient(135deg, #4FD1C7 0%, #38B2AC 100%)',
+      secondary: 'linear-gradient(135deg, #E63946 0%, #D62828 100%)',
+      neutral: 'linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%)',
+      sophisticate: 'linear-gradient(135deg, #667EEA 0%, #764BA2 100%)',
     },
   },
 
@@ -117,25 +133,36 @@ const theme = createTheme({
     borderRadius: 12, // More modern than default 8px
   },
 
-  // Component overrides for Serial Effect style
+  // Modern component overrides with contemporary UX patterns
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 8,
-          padding: '12px 32px',
+          borderRadius: 12, // More modern rounded corners
+          padding: '14px 32px',
           fontSize: '1rem',
           fontWeight: 600,
           textTransform: 'none',
           boxShadow: 'none',
+          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
-            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            transform: 'translateY(-2px)',
+            boxShadow: '0 8px 25px rgba(79, 209, 199, 0.25)',
           },
         },
         contained: {
-          background: 'linear-gradient(135deg, #E53E3E 0%, #FF6B6B 100%)',
+          background: 'linear-gradient(135deg, #4FD1C7 0%, #38B2AC 100%)',
           '&:hover': {
-            background: 'linear-gradient(135deg, #C53030 0%, #E53E3E 100%)',
+            background: 'linear-gradient(135deg, #38B2AC 0%, #319795 100%)',
+          },
+        },
+        outlined: {
+          borderColor: '#E2E8F0',
+          color: '#0F172A',
+          borderWidth: '2px',
+          '&:hover': {
+            borderColor: '#4FD1C7',
+            backgroundColor: 'rgba(79, 209, 199, 0.04)',
           },
         },
       },
@@ -143,11 +170,26 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 16,
-          boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+          borderRadius: 20, // Very modern rounded corners
+          boxShadow: '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+          border: '1px solid rgba(226, 232, 240, 0.6)',
+          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
           '&:hover': {
-            boxShadow: '0 8px 30px rgba(0,0,0,0.12)',
+            transform: 'translateY(-4px)',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.05)',
+            borderColor: 'rgba(79, 209, 199, 0.2)',
           },
+        },
+      },
+    },
+    // Modern typography scale
+    MuiTypography: {
+      styleOverrides: {
+        h1: {
+          background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
         },
       },
     },
