@@ -1,21 +1,208 @@
-// This is a simple header component using MUI
-// It shows how to structure a basic React component with Material-UI
+// Serial Effect Header Component
+// Clean, modern header with logo and navigation
 
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import React, { useState } from 'react';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
+// Geometric logo component matching Figma design
+const SerialEffectLogo = () => (
+  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+    {/* Geometric diamond/cube shapes */}
+    <Box sx={{ display: 'flex', position: 'relative' }}>
+      <Box
+        sx={{
+          width: 12,
+          height: 12,
+          backgroundColor: '#E53E3E',
+          transform: 'rotate(45deg)',
+          borderRadius: '2px',
+        }}
+      />
+      <Box
+        sx={{
+          width: 12,
+          height: 12,
+          backgroundColor: '#4FD1C7',
+          transform: 'rotate(45deg)',
+          borderRadius: '2px',
+          marginLeft: '-4px',
+          marginTop: '6px',
+        }}
+      />
+    </Box>
+    <Typography
+      variant="h6"
+      component="div"
+      sx={{
+        fontWeight: 600,
+        color: '#2D3748',
+        fontSize: '1.25rem',
+        letterSpacing: '-0.01em',
+      }}
+    >
+      Serial Effect
+    </Typography>
+  </Box>
+);
 
 const Header = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navigation = [
+    { label: 'Services', href: '#services' },
+    { label: 'About', href: '#about' },
+    { label: 'Process', href: '#process' },
+  ];
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const scrollToSection = (href) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileOpen(false);
+  };
+
+  const drawer = (
+    <Box sx={{ width: 250, height: '100%', backgroundColor: '#FFFFFF' }}>
+      <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <SerialEffectLogo />
+        <IconButton onClick={handleDrawerToggle}>
+          <CloseIcon />
+        </IconButton>
+      </Box>
+      <List>
+        {navigation.map((item) => (
+          <ListItem key={item.label} onClick={() => scrollToSection(item.href)} sx={{ cursor: 'pointer' }}>
+            <ListItemText
+              primary={item.label}
+              sx={{
+                '& .MuiTypography-root': {
+                  fontWeight: 500,
+                  color: '#2D3748',
+                }
+              }}
+            />
+          </ListItem>
+        ))}
+        <ListItem sx={{ pt: 2 }}>
+          <Button
+            variant="contained"
+            fullWidth
+            onClick={() => scrollToSection('#contact')}
+            sx={{
+              background: 'linear-gradient(135deg, #E53E3E 0%, #FF6B6B 100%)',
+              '&:hover': {
+                background: 'linear-gradient(135deg, #C53030 0%, #E53E3E 100%)',
+              },
+            }}
+          >
+            Get Free UX Audit
+          </Button>
+        </ListItem>
+      </List>
+    </Box>
+  );
+
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          My App
-        </Typography>
-        <Button color="inherit">Home</Button>
-        <Button color="inherit">About</Button>
-        <Button color="inherit">Contact</Button>
-      </Toolbar>
-    </AppBar>
+    <>
+      <AppBar
+        position="fixed"
+        elevation={0}
+        sx={{
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(226, 232, 240, 0.5)',
+        }}
+      >
+        <Toolbar sx={{ px: { xs: 2, md: 4 }, py: 1 }}>
+          <SerialEffectLogo />
+
+          <Box sx={{ flexGrow: 1 }} />
+
+          {/* Desktop Navigation */}
+          {!isMobile && (
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              {navigation.map((item) => (
+                <Button
+                  key={item.label}
+                  onClick={() => scrollToSection(item.href)}
+                  sx={{
+                    color: '#2D3748',
+                    fontWeight: 500,
+                    textTransform: 'none',
+                    fontSize: '1rem',
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                      color: '#E53E3E',
+                    },
+                  }}
+                >
+                  {item.label}
+                </Button>
+              ))}
+              <Button
+                variant="contained"
+                onClick={() => scrollToSection('#contact')}
+                sx={{
+                  ml: 2,
+                  background: 'linear-gradient(135deg, #E53E3E 0%, #FF6B6B 100%)',
+                  '&:hover': {
+                    background: 'linear-gradient(135deg, #C53030 0%, #E53E3E 100%)',
+                  },
+                }}
+              >
+                Get Free UX Audit
+              </Button>
+            </Box>
+          )}
+
+          {/* Mobile Menu Button */}
+          {isMobile && (
+            <IconButton
+              onClick={handleDrawerToggle}
+              sx={{ color: '#2D3748' }}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
+        </Toolbar>
+      </AppBar>
+
+      {/* Mobile Drawer */}
+      <Drawer
+        variant="temporary"
+        anchor="right"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{ keepMounted: true }}
+      >
+        {drawer}
+      </Drawer>
+
+      {/* Spacer for fixed header */}
+      <Toolbar />
+    </>
   );
 };
 
