@@ -121,10 +121,10 @@ const MobileMockHero = () => {
               mb: 2,
               borderRadius: '8px',
               textTransform: 'none',
-              boxShadow: 'none',
+              boxShadow: '0 4px 8px rgba(26, 188, 156, 0.3)',
               '&:hover': {
                 backgroundColor: '#16A085',
-                boxShadow: 'none',
+                boxShadow: '0 6px 12px rgba(26, 188, 156, 0.4)',
               },
             }}
           >
