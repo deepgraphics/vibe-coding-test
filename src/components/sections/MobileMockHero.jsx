@@ -116,6 +116,12 @@ const MobileMockHero = () => {
           <Button
             variant="contained"
             fullWidth
+            onClick={() => {
+              const formElement = document.querySelector('form');
+              if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }}
             sx={{
               backgroundColor: '#1ABC9C',
               color: 'white',
@@ -369,26 +375,294 @@ const MobileMockHero = () => {
             .
           </Typography>
         </Box>
-
-        {/* Hero Illustration */}
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            mb: 0, // No gap between illustration and footer
-          }}
-        >
-          <img
-            src="/src/assets/DudeandScreens.png"
-            alt="UX Designer working with multiple devices"
-            style={{
-              width: '100%',
-              maxWidth: '400px',
-              height: 'auto',
-            }}
-          />
-        </Box>
       </Container>
+
+      {/* UX Audit Form - Full Width */}
+      <Box sx={{ backgroundColor: '#FFFFFF', py: '64px' }}>
+        <Container maxWidth="xl">
+          <Typography
+            sx={{
+              fontSize: '32px',
+              fontWeight: 300,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#85909B',
+              mb: '16px',
+              textAlign: 'center',
+            }}
+          >
+            Get Your Free UX Audit
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '48px',
+              fontWeight: 400,
+              fontFamily: '"Karantina", sans-serif',
+              color: '#2C3E50',
+              mb: '48px',
+              textAlign: 'center',
+              lineHeight: 1.1,
+            }}
+          >
+            AI-POWERED INSIGHTS
+          </Typography>
+
+          {/* Form + Illustration Container */}
+          <Box
+            sx={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #EEE5D4',
+              borderRadius: '20px',
+              p: { xs: '32px', md: '48px' },
+              boxShadow: '0 8px 32px rgba(44, 62, 80, 0.08)',
+              display: 'flex',
+              flexDirection: { xs: 'column', lg: 'row' },
+              alignItems: { xs: 'center', lg: 'flex-start' },
+              gap: { xs: '40px', lg: '64px' },
+              maxWidth: '1400px',
+              mx: 'auto',
+            }}
+          >
+            {/* Form Section */}
+            <Box sx={{ flex: { xs: '1', lg: '1' }, width: '100%', maxWidth: { xs: '100%', lg: '600px' } }}>
+              <form>
+                {/* Website URL */}
+                <Box sx={{ mb: '28px' }}>
+                  <Typography
+                    sx={{
+                      fontSize: '18px',
+                      fontWeight: 600,
+                      color: '#2C3E50',
+                      mb: '12px',
+                      fontFamily: '"Inter", sans-serif',
+                    }}
+                  >
+                    Website or App URL *
+                  </Typography>
+                  <input
+                    type="url"
+                    placeholder="https://yourwebsite.com"
+                    required
+                    style={{
+                      width: '100%',
+                      padding: '16px 20px',
+                      border: '2px solid #E2E8F0',
+                      borderRadius: '12px',
+                      fontSize: '16px',
+                      fontFamily: '"Inter", sans-serif',
+                      outline: 'none',
+                      transition: 'border-color 0.3s ease',
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#1ABC9C'}
+                    onBlur={(e) => e.target.style.borderColor = '#E2E8F0'}
+                  />
+                </Box>
+
+                {/* Mad Libs Question 1 */}
+                <Box sx={{ mb: '28px' }}>
+                  <Typography
+                    sx={{
+                      fontSize: '18px',
+                      fontWeight: 600,
+                      color: '#2C3E50',
+                      mb: '16px',
+                      fontFamily: '"Inter", sans-serif',
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    "I want my users to{' '}
+                    <Box
+                      component="input"
+                      type="text"
+                      placeholder="sign up"
+                      sx={{
+                        display: 'inline-block',
+                        minWidth: '140px',
+                        padding: '6px 12px',
+                        border: 'none',
+                        borderBottom: '3px solid #1ABC9C',
+                        backgroundColor: 'transparent',
+                        fontSize: '18px',
+                        fontFamily: '"Inter", sans-serif',
+                        outline: 'none',
+                        textAlign: 'center',
+                        mx: '6px',
+                      }}
+                    />
+                    but they're struggling to{' '}
+                    <Box
+                      component="input"
+                      type="text"
+                      placeholder="find the pricing"
+                      sx={{
+                        display: 'inline-block',
+                        minWidth: '160px',
+                        padding: '6px 12px',
+                        border: 'none',
+                        borderBottom: '3px solid #1ABC9C',
+                        backgroundColor: 'transparent',
+                        fontSize: '18px',
+                        fontFamily: '"Inter", sans-serif',
+                        outline: 'none',
+                        textAlign: 'center',
+                        mx: '6px',
+                      }}
+                    />
+                    "
+                  </Typography>
+                </Box>
+
+                {/* Mad Libs Question 2 */}
+                <Box sx={{ mb: '28px' }}>
+                  <Typography
+                    sx={{
+                      fontSize: '18px',
+                      fontWeight: 600,
+                      color: '#2C3E50',
+                      mb: '16px',
+                      fontFamily: '"Inter", sans-serif',
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    "The #1 thing users complain about is{' '}
+                    <Box
+                      component="input"
+                      type="text"
+                      placeholder="it's too slow"
+                      sx={{
+                        display: 'inline-block',
+                        minWidth: '180px',
+                        padding: '6px 12px',
+                        border: 'none',
+                        borderBottom: '3px solid #1ABC9C',
+                        backgroundColor: 'transparent',
+                        fontSize: '18px',
+                        fontFamily: '"Inter", sans-serif',
+                        outline: 'none',
+                        textAlign: 'center',
+                        mx: '6px',
+                      }}
+                    />
+                    "
+                  </Typography>
+                </Box>
+
+                {/* Contact Info */}
+                <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: '20px', mb: '32px' }}>
+                  <Box sx={{ flex: 1 }}>
+                    <Typography
+                      sx={{
+                        fontSize: '18px',
+                        fontWeight: 600,
+                        color: '#2C3E50',
+                        mb: '12px',
+                        fontFamily: '"Inter", sans-serif',
+                      }}
+                    >
+                      Name *
+                    </Typography>
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      required
+                      style={{
+                        width: '100%',
+                        padding: '16px 20px',
+                        border: '2px solid #E2E8F0',
+                        borderRadius: '12px',
+                        fontSize: '16px',
+                        fontFamily: '"Inter", sans-serif',
+                        outline: 'none',
+                        transition: 'border-color 0.3s ease',
+                      }}
+                      onFocus={(e) => e.target.style.borderColor = '#1ABC9C'}
+                      onBlur={(e) => e.target.style.borderColor = '#E2E8F0'}
+                    />
+                  </Box>
+                  <Box sx={{ flex: 1 }}>
+                    <Typography
+                      sx={{
+                        fontSize: '18px',
+                        fontWeight: 600,
+                        color: '#2C3E50',
+                        mb: '12px',
+                        fontFamily: '"Inter", sans-serif',
+                      }}
+                    >
+                      Email *
+                    </Typography>
+                    <input
+                      type="email"
+                      placeholder="your@email.com"
+                      required
+                      style={{
+                        width: '100%',
+                        padding: '16px 20px',
+                        border: '2px solid #E2E8F0',
+                        borderRadius: '12px',
+                        fontSize: '16px',
+                        fontFamily: '"Inter", sans-serif',
+                        outline: 'none',
+                        transition: 'border-color 0.3s ease',
+                      }}
+                      onFocus={(e) => e.target.style.borderColor = '#1ABC9C'}
+                      onBlur={(e) => e.target.style.borderColor = '#E2E8F0'}
+                    />
+                  </Box>
+                </Box>
+
+                {/* Submit Button */}
+                <Button
+                  type="submit"
+                  variant="contained"
+                  fullWidth
+                  sx={{
+                    backgroundColor: '#1ABC9C',
+                    color: 'white',
+                    fontFamily: '"Inter", sans-serif',
+                    fontWeight: 700,
+                    fontSize: '20px',
+                    py: 3,
+                    borderRadius: '12px',
+                    textTransform: 'none',
+                    boxShadow: '0 6px 20px rgba(26, 188, 156, 0.3)',
+                    '&:hover': {
+                      backgroundColor: '#16A085',
+                      boxShadow: '0 8px 25px rgba(26, 188, 156, 0.4)',
+                      transform: 'translateY(-2px)',
+                    },
+                    transition: 'all 0.3s ease',
+                  }}
+                >
+                  Get My Free UX Audit
+                </Button>
+              </form>
+            </Box>
+
+            {/* Illustration Section */}
+            <Box
+              sx={{
+                flex: { xs: '1', lg: '1' },
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                order: { xs: -1, lg: 1 }, // Show illustration above form on mobile
+              }}
+            >
+              <img
+                src="/src/assets/DudeandScreens.png"
+                alt="UX Designer analyzing multiple devices and screens"
+                style={{
+                  width: '100%',
+                  maxWidth: '500px',
+                  height: 'auto',
+                  filter: 'drop-shadow(0 8px 24px rgba(44, 62, 80, 0.12))',
+                }}
+              />
+            </Box>
+          </Box>
+        </Container>
+      </Box>
 
       {/* Footer */}
       <Box

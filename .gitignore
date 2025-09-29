@@ -55,3 +55,7 @@ jspm_packages/
 
 # Vite
 .vite/
+
+# Claude Agents - Personal workflow data
+# This keeps agent state and history local to each developer
+.claude-agents/
