@@ -59,3 +59,7 @@ jspm_packages/
 # Claude Agents - Personal workflow data
 # This keeps agent state and history local to each developer
 .claude-agents/
+
+# Claude Code Session Logs
+# Conversation history and session data
+logs/claude-sessions/
